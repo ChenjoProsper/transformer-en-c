@@ -3,7 +3,7 @@
 #include <string.h>
 #include <math.h>
 
-#define MAX_ENTRIES 100  // Nombre maximal d'entrées dans la base de données
+#define MAX_ENTRIES 10000  // Nombre maximal d'entrées dans la base de données
 #define MAX_LENGTH 256   // Taille maximale d'une ligne de la base de données
 
 typedef struct {
