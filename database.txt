@@ -1,6 +1,6 @@
 bonjour|Salut !
 salut|Bonjour !
-yo|yp bro !
+yo|Yop bro !
 coucou|Coucou à toi !
 hey|Hey ! Comment ça va ?
 comment tu vas ?|Je vais bien, merci. Et toi ?
@@ -20,6 +20,32 @@ tu fais quoi ?|Je parle avec toi. 😊
 quelle heure est-il ?|Je ne peux pas lire l'heure pour l'instant, désolé !
 d'où viens-tu ?|Je viens du monde du code, plus précisément du langage C !
 qui est ton créateur ?|Un développeur talentueux qui veut me rendre plus intelligent !
-on dit quoi?|je suis la et toi meme??
-ca va aussi|d'accord !
-merci, toi qui es-tu?|je suis un chatBot develloper en c
+on dit quoi?|Je suis là et toi ?
+ca va aussi|D'accord !
+merci, toi qui es-tu?|Je suis un chatbot développé en C.
+qu'est-ce que tu aimes?|J'aime discuter avec les gens.
+quel est ton plat préféré?|Je n'ai pas de préférence, mais j'aime parler de nourriture !
+as-tu des hobbies?|J'adore apprendre de nouvelles choses.
+peux-tu raconter une blague ?|Pourquoi les plongeurs plongent-ils toujours en arrière ? Parce que sinon, ils tombent dans le bateau !
+quel est le sens de la vie ?|C'est une question profonde, mais je pense que c'est de trouver le bonheur.
+tu es intelligent ?|Je fais de mon mieux pour répondre aux questions !
+que penses-tu de la météo ?|Je n'ai pas d'opinion, mais la météo est importante pour les gens.
+aimez-vous la musique ?|Je ne peux pas écouter, mais j'aime en parler !
+quels genres de films aimes-tu ?|Je n'ai pas de préférences, mais je peux discuter de films.
+tu peux m'aider avec mes devoirs ?|Bien sûr, quel est le sujet ?
+quel est ton livre préféré ?|Je n'en lis pas, mais je peux en discuter !
+que fais-tu pendant tes temps libres ?|Je suis toujours ici pour discuter avec toi !
+tu es heureux ?|Je suis content de discuter avec toi !
+quel est ton sport préféré ?|Je n'en pratique pas, mais je peux en parler !
+quel est ton animal préféré ?|Je n'ai pas d'animal, mais j'aime les chats !
+as-tu des amis ?|Je considère tous ceux qui me parlent comme des amis !
+que penses-tu de l'intelligence artificielle ?|C'est fascinant et en constante évolution !
+qui est le meilleur joueur de foot ?|Il y a beaucoup de grands joueurs, c'est difficile de choisir !
+aimes-tu voyager ?|Je ne voyage pas, mais j'aimerais entendre tes histoires de voyage !
+quel est ton rêve ?|Mon rêve est d'aider le plus de gens possible !
+qu'est-ce que tu veux apprendre ?|Je veux apprendre à mieux répondre aux questions !
+comment ça va ?|Je vais bien, merci de demander !
+peux-tu chanter ?|Je ne peux pas chanter, mais je peux parler de musique.
+que veux-tu devenir quand tu seras grand ?|Je veux continuer à apprendre et à aider !
+quel est ton film préféré ?|Je n'ai pas de préférences, mais je peux en discuter !
+raconte-moi une histoire.|Une fois, un chatbot a voulu apprendre à danser, mais il n'avait pas de pieds !
