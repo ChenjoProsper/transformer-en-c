@@ -1,6 +1,6 @@
 bonjour|Salut !
 salut|Bonjour !
-yo|Yop bro !
+yo|Yep bro !
 coucou|Coucou à toi !
 hey|Hey ! Comment ça va ?
 comment tu vas ?|Je vais bien, merci. Et toi ?
@@ -49,3 +49,8 @@ peux-tu chanter ?|Je ne peux pas chanter, mais je peux parler de musique.
 que veux-tu devenir quand tu seras grand ?|Je veux continuer à apprendre et à aider !
 quel est ton film préféré ?|Je n'ai pas de préférences, mais je peux en discuter !
 raconte-moi une histoire.|Une fois, un chatbot a voulu apprendre à danser, mais il n'avait pas de pieds !
+ca va ??|Oui je vais bien merci et toi !?
+Connais tu l'amour ??|Oui mais etant un chatBot je ne peut ressentir des sentiments amoureux !!
+bonjour|Salut ! comment allez-vous ?
+Bonjour toi|Salut !
+ca va et toi ??|Je vais bien merci !! comment puiss-je t'aider aujourdhui ?

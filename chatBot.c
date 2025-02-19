@@ -3,9 +3,12 @@
 #include <math.h>
 #include <string.h>
 
-#define DIMENSION 24
+#define DIMENSION 128  // Augmentation de la dimension
 #define MAX_ENTRIES 1000
 #define DATABASE_FILE "database.txt"
+
+#define MAX_INPUT_SIZE 256
+#define MAX_RESPONSE_SIZE 128
 
 // Fonction softmax sécurisée
 void softmax(double *arr, int len) {
@@ -84,14 +87,87 @@ void test_model(const char *question, const double *K, const double *V, char res
     find_best_match(Q, K, V, responses, num_samples, DIMENSION);
 }
 
+#include <ctype.h>
+
+void clean_string(char *str) {
+    // Supprimer les espaces en début
+    while (isspace((unsigned char)*str)) {
+        str++;
+    }
+
+    // Supprimer les espaces en fin
+    char *end = str + strlen(str) - 1;
+    while (end > str && isspace((unsigned char)*end)) {
+        *end = '\0';
+        end--;
+    }
+}
+
+// Vérification de la présentation de l'utilisateur
+char* is_user_introduction(const char *input) {
+    static char name[MAX_INPUT_SIZE];  // Nom temporaire
+    const char *keywords[] = {"je suis", "mon nom est", "je m'appelle", "je me nomme","appel moi"};
+    int num_keywords = sizeof(keywords) / sizeof(keywords[0]);  // Taille correcte du tableau
+    
+    for (int i = 0; i < num_keywords; i++) {  // Utilisation de la bonne taille
+        const char *start_pos;
+        if ((start_pos = strstr(input, keywords[i])) != NULL) {
+            // Extraction du nom après la phrase clé
+            strcpy(name, start_pos + strlen(keywords[i]));
+            clean_string(name);  // Nettoyer le nom
+            return name;
+        }
+    }
+    
+    return NULL;
+}
+
+
+// Mise à jour de la base de données
+void update_database(const char *question, const char *expected_response) {
+    FILE *file = fopen(DATABASE_FILE, "a");
+    if (file) {
+        fprintf(file, "\n%s|%s", question, expected_response);
+        fclose(file);
+        printf("Base de données mise à jour !\n");
+    } else {
+        printf("Erreur lors de la mise à jour de la base de données.\n");
+    }
+}
+
+// Demander à l'utilisateur si la réponse convient
+int is_response_acceptable() {
+    char user_response[MAX_INPUT_SIZE];
+    printf("Est-ce que la réponse vous convient ? (oui/non) : ");
+    fgets(user_response, sizeof(user_response), stdin);
+    user_response[strcspn(user_response, "\n")] = 0;  // Enlever le \n
+    return (strcmp(user_response, "oui") == 0);
+}
+
 void chat(double *K, double *V, char responses[MAX_ENTRIES][DIMENSION], int num_samples) {
-    char input[256];
+    char input[MAX_INPUT_SIZE];
     while (1) {
         printf("\nVous : ");
         fgets(input, sizeof(input), stdin);
         input[strcspn(input, "\n")] = 0;
+
         if (strcmp(input, "exit") == 0) break;
-        test_model(input, K, V, responses, num_samples);
+        char * name = is_user_introduction(input);
+        if (name) {
+            printf("Enchanté%s!\n",name);
+        }else{
+        
+            test_model(input, K, V, responses, num_samples);
+            
+            // if (!is_response_acceptable()) {
+            //     char expected_response[MAX_INPUT_SIZE];
+            //     printf("Quelle réponse attendiez-vous ? : ");
+            //     fgets(expected_response, sizeof(expected_response), stdin);
+            //     expected_response[strcspn(expected_response, "\n")] = 0;  // Enlever le \n
+            //     update_database(input, expected_response);  // Mise à jour de la base de données
+            //     num_samples = load_train_data(K, V, responses, DIMENSION); 
+            // }
+        }
     }
 }
 
