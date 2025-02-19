@@ -1,0 +1,25 @@
+bonjour|Salut !
+salut|Bonjour !
+yo|yp bro !
+coucou|Coucou à toi !
+hey|Hey ! Comment ça va ?
+comment tu vas ?|Je vais bien, merci. Et toi ?
+ça va ?|Oui, merci. Et toi ?
+je vais bien|Content de l'entendre !
+pas terrible|Oh, j'espère que ça ira mieux bientôt.
+qui es-tu ?|Je suis un chatbot développé en C.
+que fais-tu ?|Je discute avec toi. 😊
+quel est ton nom ?|Je suis un chatbot, mais tu peux m'appeler BotC !
+merci|Avec plaisir !
+au revoir|À bientôt !
+bye|Bye bye !
+c'est quoi ton but ?|Mon but est de répondre à tes questions et discuter avec toi.
+aide-moi|Bien sûr, que puis-je faire pour toi ?
+tu peux m'aider ?|Oui, dis-moi ce dont tu as besoin.
+tu fais quoi ?|Je parle avec toi. 😊
+quelle heure est-il ?|Je ne peux pas lire l'heure pour l'instant, désolé !
+d'où viens-tu ?|Je viens du monde du code, plus précisément du langage C !
+qui est ton créateur ?|Un développeur talentueux qui veut me rendre plus intelligent !
+on dit quoi?|je suis la et toi meme??
+ca va aussi|d'accord !
+merci, toi qui es-tu?|je suis un chatBot develloper en c
